@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Dia das Mães</title>
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+    
+    <div class="container">
+        <h1 id="frase">Carregando mensagem...</h1>
+        
+        <div class="image-container">
+            <div class="image-glow"></div>
+            <img src="" alt="Foto da Mamãe" id="imagem" onclick="proximafoto()">
+        </div>
+        
+        <p class="dica">Toque na foto para ver mais</p>
+        
+        <div class="love-button" onclick="showLoveMessage()">
+            <span>Te Amo Mãe!</span>
+        </div>
+    </div>
+
+    <div id="love-message" class="love-message hidden">
+        <div class="love-content">
+            <h2>Você é TUDO para mim!</h2>
+            <p>Mãe, você é meu mundo inteiro! Obrigado por tudo!</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
